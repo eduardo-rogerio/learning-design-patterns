@@ -1,6 +1,6 @@
 
 Instala o projeto
-```
+```bash
  docker run --rm \
     -u "$(id -u):$(id -g)" \
     -v "$(pwd):/var/www" \
@@ -10,7 +10,7 @@ Instala o projeto
 ```
 
 Atualiza o projeto
-```
+```bash
  docker run --rm \
     -u "$(id -u):$(id -g)" \
     -v "$(pwd):/var/www" \
@@ -19,6 +19,6 @@ Atualiza o projeto
     composer update --ignore-platform-reqs
 ```
 Abre um terminal. 
-```
+```bash
 docker compose exec php sh
 ```
